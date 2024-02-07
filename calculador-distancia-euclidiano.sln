@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calculador-distancia-euclidiano", "calculador-distancia-euclidiano.csproj", "{174C1AAF-CE58-465D-8F75-840560F0F5BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{174C1AAF-CE58-465D-8F75-840560F0F5BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{174C1AAF-CE58-465D-8F75-840560F0F5BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{174C1AAF-CE58-465D-8F75-840560F0F5BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{174C1AAF-CE58-465D-8F75-840560F0F5BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1384B1A2-DA23-4386-A6A9-691E65D5E900}
+	EndGlobalSection
+EndGlobal
