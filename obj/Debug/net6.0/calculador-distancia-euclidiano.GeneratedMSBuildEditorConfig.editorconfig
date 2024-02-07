@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\juanp\Desktop\JH\ADSI - SENA\Proyectos C#\calculador-distancia-euclidiano
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/juanp/Desktop/JH/ADSI - SENA/Proyectos C\#/calculador-distancia-euclidiano/Views/CalculadorDistancia/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsY3VsYWRvckRpc3RhbmNpYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/juanp/Desktop/JH/ADSI - SENA/Proyectos C\#/calculador-distancia-euclidiano/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -1,0 +1,53 @@
+﻿@model List<PlanoCartesiano>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Calculador de Distancia Euclidiano</h1>
+    <p>Aplicación Web desarrollada con ASP.NET y con arquitectura MVC</p>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <h5>Lista de mascotas</h5>
+    </div>
+    <div class="card-body">
+        <a class="btn btn-success btn-sm" asp-action="" asp-controller="" asp-route-idMascota="0">Agregar Coordenadas</a>
+        <br />
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Punto Inicial X</th>
+                    <th>Punto Inicial Y</th>
+                    <th>Punto Final X</th>
+                    <th>Punto Final Y</th>
+                    <th>Distancia</th>
+                    <th>Fecha del Cálculo</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.PuntoInicialX</td>
+                        <td>@item.PuntoInicialY</td>
+                        <td>@item.PuntoFinalX</td>
+                        <td>@item.PuntoFinalY</td>
+                        <td>@item.Distancia</td>
+                        <td>@item.FechaCalculo</td>
+                        <td>
+                            <a class="btn btn-primary btn-sm" asp-action="" asp-controller="" asp-route-idMascota="@item.Id">Editar</a>
+                            <a class="btn btn-danger btn-sm" asp-action="" asp-controller="" asp-route-idMascota="@item.Id">Eliminar</a>
+                            <a class="btn btn-warning btn-sm" asp-action="" asp-controller="" asp-route-idMascota="@item.Id">Graficar</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
