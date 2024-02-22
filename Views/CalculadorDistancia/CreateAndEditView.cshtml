@@ -1,0 +1,52 @@
+﻿@model PlanoCartesiano
+@{
+    ViewData["Title"] = "CreateAndEditView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Model.Id == 0)
+{
+    <h1>Crear Nueva Mascota</h1>
+}
+else
+{
+    <h1>Editar Mascota</h1>
+}
+
+<div class="row">
+    <div class="col-sm-4">
+        <form asp-action="Calcular" asp-controller="CalculadorDistancia" method="post">
+            <input type="hidden" asp-for="@Model.Id" />
+
+            <div class="mb-2">
+                <label class="form-label" asp-for="@Model.PuntoFinalX">Punto Final X</label>
+                <input class="form-control form-control-sm" asp-for="@Model.PuntoFinalX" type="number" />
+            </div>
+
+            <div class="mb-2">
+                <label class="form-label" asp-for="@Model.PuntoFinalY">Punto Final Y</label>
+                <input class="form-control form-control-sm" asp-for="@Model.PuntoFinalY" type="number" />
+            </div>
+
+
+            <div class="mb-2">
+                @if (Model.Id == 0)
+                {
+                    <button class="btn btn-primary btn-sm w-35" type="submit">
+                        Guardar Coordenadas
+                    </button>
+                }
+                else
+                {
+                    <button class="btn btn-primary btn-sm w-35" type="submit">
+                        Actualizar Coordenadas
+                    </button>
+                }
+                <a class="btn btn-dark btn-sm" asp-action="Index" asp-controller="CalculadorDistancia">Volver</a>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+

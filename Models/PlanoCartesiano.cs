@@ -9,9 +9,9 @@ public partial class PlanoCartesiano
 {
     public int Id { get; set; }
 
-    public int PuntoInicialX { get; set; }
+    public int PuntoInicialX { get; set; } = 0;
 
-    public int PuntoInicialY { get; set; }
+    public int PuntoInicialY { get; set; } = 0;
 
     public int PuntoFinalX { get; set; }
 

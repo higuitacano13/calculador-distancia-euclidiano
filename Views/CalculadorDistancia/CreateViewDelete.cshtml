@@ -1,0 +1,40 @@
+﻿@model PlanoCartesiano
+@{
+    ViewData["Title"] = "CreateViewDelete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3 class="text-danger">¿Está seguro de eliminar la mascota?</h3>
+<hr />
+<div class="row">
+    <div class="col-sm-4">
+        <form asp-action="EliminarCoordenada" asp-controller="CalculadorDistancia" method="post">
+            <input type="hidden" asp-for="Id" />
+
+            <div class="mb-2">
+                <label class="form-label" asp-for="@Model.PuntoFinalX">Punto Final X</label>
+                <input class="form-control form-control-sm" asp-for="@Model.PuntoFinalX" type="number" disabled />
+            </div>
+
+            <div class="mb-2">
+                <label class="form-label" asp-for="@Model.PuntoFinalY">Punto Final Y</label>
+                <input class="form-control form-control-sm" asp-for="@Model.PuntoFinalY" type="number" disabled />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" asp-for="@Model.Distancia">Distancia</label>
+                <input class="form-control form-control-sm" value="@string.Format("{0:F4}", Model.Distancia)" type="text" disabled />
+            </div>
+
+            <div class="mb-2">
+                <button class="btn btn-danger btn-sm w-25" type="submit">
+                    Eliminar
+                </button>
+                <a class="btn btn-dark btn-sm" asp-action="Index" asp-controller="CalculadorDistancia">Volver</a>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
