@@ -42,7 +42,7 @@
                         <td>
                             <a class="btn btn-primary btn-sm" asp-action="CreateAndEditView" asp-controller="CalculadorDistancia" asp-route-id="@item.Id">Editar</a>
                             <a class="btn btn-danger btn-sm" asp-action="CreateViewDelete" asp-controller="CalculadorDistancia" asp-route-id="@item.Id">Eliminar</a>
-                            <a class="btn btn-warning btn-sm" href="#" onclick="capturarDatosGrafica(@item.Id)">Graficar</a>
+                            <a class="btn btn-warning btn-sm" href="#planoCartesiano" onclick="capturarDatosGrafica(@item.Id)">Graficar</a>
                         </td>
                     </tr>
                 }

@@ -35,7 +35,6 @@ function actualizarGrafica(puntoA, puntoB, distanciaAB) {
             pointBorderWidth: 4
         }]
     };
-
     let configuracionesGrafico = {
         scales: {
             x: {
