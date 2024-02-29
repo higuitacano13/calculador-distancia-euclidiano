@@ -16,11 +16,6 @@ function capturarDatosGrafica(id) {
     let puntoFinalX = parseFloat(fila.cells[2].innerText);
     let puntoFinalY = parseFloat(fila.cells[3].innerText);
 
-    console.log("Punto Inicial X: " + puntoInicialX);
-    console.log("Punto Inicial Y: " + puntoInicialY);
-    console.log("Punto Final X: " + puntoFinalX);
-    console.log("Punto Final Y: " + puntoFinalY);
-
     let puntoA = { x: puntoInicialX, y: puntoInicialY };
     let puntoB = { x: puntoFinalX, y: puntoFinalY };
     let distanciaAB = calcularDistancia(puntoA.x, puntoA.y, puntoB.x, puntoB.y);
