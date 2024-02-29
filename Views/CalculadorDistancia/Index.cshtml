@@ -11,8 +11,9 @@
 
 <div class="card">
     <div class="card-header">
-        <h5>Lista de mascotas</h5>
+        <h5>Coordenadas</h5>
     </div>
+
     <div class="card-body">
         <a class="btn btn-success btn-sm" asp-action="CreateAndEditView" asp-controller="CalculadorDistancia" asp-route-id="0">Agregar Coordenadas</a>
         <br />
@@ -31,7 +32,7 @@
             <tbody>
                 @foreach (var item in Model)
                 {
-                    <tr>
+                    <tr id="fila-@item.Id">
                         <td>@item.PuntoInicialX.ToString("N2")</td>
                         <td>@item.PuntoInicialY.ToString("N2")</td>
                         <td>@item.PuntoFinalX.ToString("N2")</td>
@@ -41,7 +42,7 @@
                         <td>
                             <a class="btn btn-primary btn-sm" asp-action="CreateAndEditView" asp-controller="CalculadorDistancia" asp-route-id="@item.Id">Editar</a>
                             <a class="btn btn-danger btn-sm" asp-action="CreateViewDelete" asp-controller="CalculadorDistancia" asp-route-id="@item.Id">Eliminar</a>
-                            <a class="btn btn-warning btn-sm" asp-action="" asp-controller="" asp-route-id="@item.Id">Graficar</a>
+                            <a class="btn btn-warning btn-sm" href="#" onclick="capturarDatosGrafica(@item.Id)">Graficar</a>
                         </td>
                     </tr>
                 }
@@ -49,16 +50,12 @@
         </table>
     </div>
 
-    <section>
-        <div class="chard-container">
-            <canvas id="planoCartesiano" width="400" height="400"></canvas>
-        </div>
-    </section>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="./js/planoCartesiano.js"></script>
+    <div class="chard-container">
+        <canvas id="planoCartesiano" width="400" height="400"></canvas>
+    </div>
 
 </div>
 
 
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./js/planoCartesiano.js"></script>
