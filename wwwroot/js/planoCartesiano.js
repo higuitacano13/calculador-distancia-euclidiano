@@ -48,7 +48,7 @@ function actualizarGrafica(puntoA, puntoB, distanciaAB) {
         plugins: {
             title: {
                 display: true,
-                text: 'Puntos en el Plano Cartesiano'
+                text: 'Coordenadas en Plano Cartesiano'
             },
             annotation: {
                 annotations: [
