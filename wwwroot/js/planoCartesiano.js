@@ -149,4 +149,4 @@ function actualizarGrafica(puntoA, puntoB, distanciaAB) {
 
 // Llamar a la función capturarDatosGrafica con valores predeterminados
 actualizarGrafica({ x: puntoInicialX, y: puntoInicialY }, { x: puntoFinalX, y: puntoFinalY },
-calcularDistancia(puntoInicialX, puntoInicialY, puntoFinalX, puntoFinalY));
+    calcularDistancia(puntoInicialX, puntoInicialY, puntoFinalX, puntoFinalY));
